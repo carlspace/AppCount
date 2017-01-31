@@ -25,8 +25,23 @@
         android:textSize="30pt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="125dp"
-        android:id="@+id/button1" />
+        android:id="@+id/button1"
+        android:layout_below="@+id/display"
+        android:layout_toLeftOf="@+id/display"
+        android:layout_toStartOf="@+id/display"
+        android:layout_marginTop="80dp" />
+
+    <Button
+        android:text="-"
+        android:textSize="30pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_toRightOf="@+id/display"
+        android:layout_toEndOf="@+id/display"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp" />
+
 </RelativeLayout>
