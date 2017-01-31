@@ -22,17 +22,18 @@ public class Presentador implements IPresentador{
 
     @Override
     public void tratarBotonResta() {
-        modelo.sumar();
+        modelo.restar();
     }
 
     @Override
     public void tratarBotonSuma() {
+
         modelo.sumar();
     }
 
     @Override
     public void actualizarBoton() {
-
+        miVista.setResultado(modelo.getContador());
     }
 
     @Override
